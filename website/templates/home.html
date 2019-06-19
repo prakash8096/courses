@@ -1,0 +1,73 @@
+
+{% extends 'base.html'%}
+{% load static %}
+<html>
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+        background-color:#c5ccca;
+        background-image:url("/static/images/rev1.jpg");
+
+        }
+
+        .pos{
+        margin:100px;
+        font-size:30px;
+        text-weight:bold;
+
+
+        }
+        p:hover{
+        color:blue;
+        }
+        a:link{
+        color:orange;
+        }
+        a:visited{
+        color:black;
+        }
+        a:hover{
+        color:blue;
+        }
+        .bor{
+        border:7px solid #e
+
+        }
+        .d{
+        display:inline;
+        }
+        a{
+        text-decoration:none;
+        font-size:50px;
+        }
+        p{
+        text-color:
+        }
+        ul{
+        list-style-image:url(/static/images/click.png)
+        }
+
+    </style>
+</head>
+<body>
+<div class="pos">
+
+
+<h1>Hi Guys this is your homepage</h1>
+<p>Here you can find all the information about the  course that you wanna select for your future studies on M.P.C background</p>
+</div>
+<div class="d">
+<ul class="pos">
+    <li><a href="{% url 'maths'%}">M.P.C</a></li>
+
+</ul>
+</div>
+
+</body>
+{% endblock %}
+
+</html>

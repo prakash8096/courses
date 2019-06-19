@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+        list-style-image:url(/static/images/eng.png);
+        font-size:23px;
+
+        }
+
+        h3{
+        font-size:30px;
+        }
+        body{
+        margin:100px;
+        background-image:url(/static/images/he.jpg);
+
+        }
+        h1
+        {
+        font-size:50px;
+        }
+        p{
+        font-size:25px;
+        text-align:justify;
+        }
+        .w
+        {
+        width:500px;
+        float:left;
+        }
+        .no{
+        clear:both;
+        }
+        img{
+        margin-top:90px;
+        height:360px;
+        border-radius:8px;
+
+        float:right;
+
+        }
+        .aero
+        {
+        margin:30px 275px;
+        width:900px;
+        height:400px;
+        }
+        .chemical{
+        float:right;
+        }
+        .ci
+        {
+        float:left;
+        margin-top:40px;
+        margin-bottom:30px;
+        border-radius:8px;
+        }
+        .civi
+        {
+        margin-top:40px;
+        margin-left:70px;
+        border-radius:10px;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1>Which Type of Engineering Should You Study?</h1>
+<p class="w">Engineering is an extensive subject, and with so many types of engineering to choose from, it can be difficult to narrow down which one is for you. To help you to decide, you should try and identify what you’re passionate about. What gets you excited, and what do you spend your free time on? All types of engineering include some form of problem-solving (and generally focus on making life easier), but what engineering-related solution gives you the most buzz? If you choose a subject you’re naturally interested in, you’ll find it easier to stay motivated during your course, and stay involved with the subject whilst pursuing an engineering career.
+    <br>Here’s a rundown of the various branches of engineering, to help you decide which one could be for you.</p>
+<img src="{% static 'images/enghead.jpg' %}">
+<h1 class="no">Aerospace/aeronautical engineering </h1>
+<img src="{% static 'images/aero.jpg' %}" class="aero">
+<p class="no">This branch of engineering deals with the research, design, development, construction, testing, science and technology of aircraft. You could also study astronautical engineering, focusing on spacecraft and the deep conditions of space</p>
+<h3>This type of engineering is for you if</h3>
+<ul>
+    <li>You’re fascinated by the history and methodology behind flying machines, from the earliest conceptual sketches to the advancement of modern jets</li>
+    <li>You have a keen interest in the mechanics of flight travel</li>
+    <li>You’re intrigued by computer simulation and in seeing how aircraft machinery performs under extreme conditions</li>
+</ul>
+<h1>
+    Chemical engineering
+</h1>
+<p>This type of engineering concerns the use of chemical and biological processes to produce useful materials or substances. It’s a multidisciplinary subject, combining natural and experimental sciences (such as chemistry and physics), along with life sciences (such as biology, microbiology and biochemistry), plus mathematics and economic</p>
+<h3>This type of engineering is for you if:</h3>
+
+<ul class="chemical">
+    <li>You have an analytical mindset</li>
+    <li>You’re also considering studying chemistry or another natural/life science</li>
+    <li>You’re interested in the chemical processes behind producing everyday items</li>
+</ul>
+<img src="{% static 'images/chemical.jpg' %}" class="ci">
+<h1 class="no">Civil engineering</h1>
+<img src="{% static 'images/civil.png' %}" class="civi">
+<p>Civil engineering is the professional practice of designing and developing infrastructure projects. This can be on a huge scale, such as the development of nationwide transport systems or water supply networks, or on a smaller scale, such as the development of single roads or buildings</p>
+<h3>This type of engineering is for you if:</h3>
+<ul>
+    <li>You’re interested in designing and building things</li>
+       <li>You’re interested in mechanics, hydraulics, geotechnics (using knowledge of the Earth’s crust to solve construction problems), materials science and statistical analysis</li>
+
+       <li>You’d like to develop your design skills, particularly in computer-aided design</li>
+    </ul>
+    <h1>Computer engineering Computer engineering</h1>
+<p>
+    Computer engineering concerns the design and prototyping of computing hardware and software. This subject merges electrical engineering with computer science, and you may prefer to study computer engineering alongside one of these similar subjects
+</p>
+    <h3>This type of engineering is for you if:</h3>
+<ul>
+    <li>You’re interested in an engineering career related to computers – for example as a software developer or computer engineer.</li>
+     <li>You’re interested in mathematics, science and computers, and want to learn more about how computers operate at a physical level</li>
+     <li>You want to produce new products and systems based on the technological advances of computer scientists</li>
+</ul>
+<h1>Electrical/electronics engineering Electrical engineering</h1>
+<p>
+Electrical and electronics engineering both focus on applications of electrical power. The two fields differ in that electrical engineers chiefly focus on the large-scale production and supply of electrical power, while electronics engineers focus on much smaller electronic circuits, such as those used in computers.</p>
+<h3>This type of engineering is for you if</h3>
+<ul>
+    <li>You’re interested in how electrical devices and systems work</li>
+    <li>You want to help power the next phase of technological developments</li>
+    <li>You naturally want to understand how any electrical system is set up and have ideas for how it could be improved.</li>
+</ul>
+<h1>Mechanical engineering</h1>
+<img src="{% static 'images/mech.jpg' %}" class="civi">
+<p>One of the oldest and broadest types of engineering, mechanical engineering is concerned with the design, manufacturing and maintenance of mechanical systems. You’ll study statics and dynamics, thermodynamics, fluid dynamics, stress analysis, mechanical design and technical drawing</p>
+<h3>This type of engineering is for you if…</h3>
+<ul>
+    <li>You like fiddling with mechanical devices (you could also consider aeronautical engineering)</li>
+     <li>ou’re interested in coming up with new and innovative designs in fields such as sustainable energy and artificial intelligence</li>
+     <li>You’re interested in working as part of an interdisciplinary team to develop and improve mechanical technologies</li>
+</ul>
+
+
+</body>
+{% endblock %}
+</html>

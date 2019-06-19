@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <style>
+        p{
+        font-size:28px;
+        text-align:justify;
+        }
+        body{
+        margin:100px;
+        }
+        ul
+        {
+        font-size:25px;
+        list-style-image:url(/static/images/arch.png);
+        line-height:60px;
+        }
+        h1{
+        font-size:50px;
+        }
+        img
+        {
+        margin-top:60px;
+        margin-bottom:70px;
+        margin-left:200px;
+        width:1100px;
+        border-radius:10px;
+        }
+        body{
+        background-image:url(/static/images/he.jpg)
+        }
+    </style>
+</head>
+<body>
+<h1>Bachelor Of Architecture (B.Arch)</h1>
+<img src="{% static 'images/architecture.png'%}">
+<p>Career in Architecture is attractive, lucrative, and has lots of potential in terms of development. The architectural degree is designed in such a way so that it fulfills the educational component of professional certifying bodies</p>
+<p>You can become an Architect after completing B.Arch education. Architects are the actual creators of amazing buildings and structures that exist in our surroundings<br></p>
+<p>Architect concentrates how to make people living simple and comfortable ranging from middle class to upper class & provide them shelter and housing with luxury and style</p>
+<h1>Eligibility:</h1>
+<ul>
+    <li>Candidates have to complete their 10+2 Examination with Mathematics and English as compulsory subjects & secure at least 50% marks in the examinatio</li>
+    <li>Those candidates have 10+3 year Diploma in any stream, they can also apply for B.Arch programme</li>
+    <li>Candidates can get admission in this programme through JEE Main 2019, NATA 2019</li>
+    <li>After completing your B.Arch course, you have a scope of higher study. You can apply for GATE 2019.</li>
+</ul>
+<h1>Career & Jobs</h1>
+<p>You can work in the sectors of construction, urban planning, urban development corporations, public works departments, interior designing, etc<br>Architects have lots of job opportunities in architect firms, universities, consultancy companies, etc. Global market, especially in the USA, Australia and Dubai provide attractive career and jobs for architecture graduates<br>Government Organizations offering jobs to the B.Arch Candidates such as Archaeological Department, National Building Organization, Ministry of Defense, Departments of Railways, Housing and Urban Development Corporation, Public Works Department, etc.</p>
+
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+        font-size:30px;
+        text-align:justify;
+        }
+        body
+        {
+        margin:100px;
+        background-image:url(/static/images/ano.jpg)
+        }
+        ul
+        {
+        font-size:24px;
+        list-style-image:url(/static/images/bsc.png);
+        line-height:50px;
+        float:left;
+        }
+        .bim
+        {
+        float:right;
+        margin-left:150px;
+        margin-top:60px;
+        border-radius:20px;
+
+        width:1050px;
+        height:500px;
+        }
+        h3
+        {
+        font-size:30px;
+        }
+         ol
+        {
+        font-size:24px;
+        }
+        h1
+        {
+        font-size:40px;
+        }
+        .no
+        {
+        clear:both;
+        }
+        .job{
+        width:1350px;
+        height:700px;
+        border-radius:10px;
+
+        }
+    </style>
+</head>
+<body>
+<h1>Bachelor of Science (B.Sc.)</h1>
+<p>Bachelor of Science (B.Sc.) or B.S. is one of the most popular academic degree courses among the science students after class 12th. The duration of B.Sc. degree course ranges from 3 years to 5 years, depending upon the country in which you are studying for eg. In India the course is generally of 3 years whereas in Argentina the course duration is 5 years</p>
+<p>The B.Sc. degree course is a graduate degree course in Science; this can be a part-time or full-time course. This course forms the basis of science and comprises of the subjects like physics, chemistry, biology, zoology and mathematics.</p>
+<h3>Simple B.Sc. Course: These courses include the traditional B.Sc. courses. These are mentioned below</h3>
+<ul>
+    <li>B.Sc. (PCM)</li>
+       <li>B.Sc. (Physics)</li>
+       <li>B.Sc. (Maths)</li>
+       <li>B.Sc. (Zoology)</li>
+       <li>B.Sc. (Statistics)</li>
+       <li>B.Sc. (Botany)</li>
+       <li>B.Sc. (Home Science)</li>
+       <li>B.Sc. (Chemistry)</li>
+
+
+</ul>
+<img src="{% static 'images/bs.png'%}" class="bim">
+<h1 class="no">Eligibility</h1>
+<ol>
+    <li>The admission to the various B.Sc. courses are done on the basis of qualifying class 12th examinations in (PCM/B ) stream</li>
+    <li>Candidates must have passed/appearing in the class 12th can apply for the B.Sc programmes as per their choice and preference</li>
+</ol>
+<h1>Career & Jobs:</h1>
+<img src="{% static 'images/bjobs.jpg'%}" class="job">
+<p>Just like an academic courses, students who have a B.Sc degree also have an excellent employment opportunities.  Jobs for B.Sc graduates are not just restricted in the field of science but also they can explore others areas like management, engineering, law etc.</p>
+<p>There are various opportunities available for the students after B.Sc. the students can go in a research field, in some colleges the students are recruited directly by the big organizations at a very good salary package, some professional B.Sc. courses like animation and IT open the door of animation and IT industry for the graduates, the other professional B.Sc. field also have vast career opportunities</p>
+
+</body>
+{% endblock %}
+</html>

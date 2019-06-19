@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+<html lang="en">
+{% block content %}
+<style>
+    h1{
+    font-size:38px;
+    }
+    p{
+    font-size:25px;
+    }
+    body{
+    margin:100px;
+    }
+    a{
+    font-size:30px;
+
+    }
+    body{
+    background-image:url(/static/images/ano.jpg)
+    }
+
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Name:{{batman.Name}}</h1>
+<p>Comment:{{batman.Comment}}</p>
+<a href="{% url 'edit_post' batman.pk %}">Edit Comment</a>
+
+</body>
+{% endblock %}
+</html>

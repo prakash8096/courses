@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p
+        {
+        font-size:28px;
+        text-align:justify
+        }
+        body
+        {
+        margin:100px;
+        background-image:url(/static/images/he.jpg)
+        }
+        h3{
+        font-size:30px;
+        }
+        h4{
+        font-size:24px;
+        }
+        .ull
+        {
+        font-size:22px;
+        list-style-image:url(/static/images/arm.png);
+        float:left;
+        width:340px;
+
+
+        }
+        .gap{
+        line-height:32px;
+        list-style-image:url(/static/images/arm.png);  font-size:22px;
+        }
+        .nav
+        {
+        width:750px;
+        height:500px;
+        float:right;
+        margin-top:0px;
+        margin-right:200px;
+        border-radius:12px;
+
+        }
+        .no
+        {
+        clear:both;
+        }
+    </style>
+</head>
+<body>
+<h1>Join Army Navy and Air Force After 12th</h1>
+<p>One can fulfill his dream of joining officer cadre of Indian armed forces after 12th , one can join army, airforce and navy after completing 10+2 by various entries, but there are certain eligibility criteria which is to be fulfilled. Below is a detailed view of how one can join India armed forces after 12th</p>
+<h1>Navy:</h1>
+<p> NDA & NA Examination :  You can join NA by taking the exam conducted by Union Public Service Commission (UPSC). This exam is conducted twice a year in all major cities throughout India</p>
+<h3>Eligibility Criteria</h3>
+<ul class="ull">
+    <li><h4>Age</h4> – 16 ½ to 19 years(at the time of commencement of course)</li>
+    <li><h4>Gender</h4>  – Men only</li>
+    <li><h4>Nationality</h4> – Indian</li>
+    <li><h4>Educational Qualifications</h4> – 10+2 with Physics and Mathematics. Appearing final year students can also eligible to apply</li>
+
+
+</ul>
+<img src="{% static 'images/navy.jpg'%}" class="nav">
+<h1 class="no">Army</h1>
+<img src="{% static 'images/army.jpg'%}" align="center">
+<p>The Indian Army is the land-based branch and the largest component of Indian Armed Forces. The President of India is the Supreme Commander of the Indian Army, and it is commanded by the Chief of Army Staff (COAS), who is a four-star general. Two officers have been conferred with the rank of field marshal, a five-star rank, which is a ceremonial position of great honour. The Indian Army originated from the armies of the East India Company, which eventually became the British Indian Army, and the armies of the princely states, which finally became the national army after independence. The units and regiments of the Indian Army have diverse histories and have participated in a number of battles and campaigns across the world, earning a large number of battle and theatre honours before and after Independence</p>
+<h3>Eligibility Criteria</h3>
+<ul class="gap">
+    <li>Age – 16 ½ to 19½ yrs</li>
+     <li>Qualification – 12th Class of 10+2 for Army and with Physics and Maths for AF/Navy</li>
+     <li>Marital Status – Unmarried</li>
+
+</ul>
+
+
+</body>
+{% endblock %}
+</html>

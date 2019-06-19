@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+        font-size:26px;
+        text-align:justify;
+        }
+        body
+        {
+        margin:100px;
+        background-image:url(/static/images/he.jpg)
+        }
+        h1{
+        font-size:48px;
+        }
+        h2{
+        font-size:35px;
+        }
+        h3{
+        font-size:30px;
+        text-decoration:underline;
+        }
+        ul{
+        font-size:26px;
+        line-height:40px;
+        list-style-image:url(/static/images/la.png);
+        float:left;
+
+
+        }
+        img{
+        width:1100px;
+        margin-top:60px;
+        margin-bottom:20px;
+        border-radius:12px;
+        }
+        .no{
+        clear:both;
+        }
+        .image{
+        width:720px;
+        height:250px;
+        margin-top:100px;
+        float:left;
+        }
+
+    </style>
+</head>
+<body>
+<h1>LAW:</h1>
+<img src="{% static 'images/law.jpeg'%}">
+<p>Law” is the one of the most fundamental parts of our constitution. And law education is the only legal education in India that students can pursue and those who manage to clear this degree are designated with the post of a “Lawyer”. In this article, find information about law courses after 12th in India</p>
+<h2>law Courses after 12th</h2>
+<p>Law is regarded as one of the most prestigious courses after 12th. In India, students can take up the legal degree once they’ve completed a graduation degree in any discipline. These are the law courses after 12th available in India</p>
+<h3>Bachelor of Laws (LL.B.) – 3 years</h3>
+<p>LLB is one of the most commonly opted for law courses after 12th, and its duration is 3 years.</p>
+<h3>Integrated undergraduate degrees – B.A. LL.B., B.Sc. LL.B., BBA LLB, B.Com LL.B – 5 years</h3>
+<p>If you want to take up the integrated course, then you can get admission to the 5-year integrated programme after the completion of 10+2 exams</p>
+<h3>Master of Laws (LL.M.) – one/two years</h3>
+<p>LLM is basically the master degree in legal education with the option of one or two-year duration. It was started in India before 2012</p>
+<h3>Integrated MBL-LLM/ MBA-LLM – 3 years</h3>
+<p>If you wish to do the integrated course with a specialization in business, then opt for the MBL-LLM or MBA-LLM. It is a 3-year degree programme that can be done after the completion of the LLB.</p>
+<h2>Admission in Law Education</h2>
+<p>Students, who want to get admission in law, have to give the CLAT 2019 (Common Law Admission Test). CLAT gets organized for giving admission to the National Law Universities (NLUs) and a variety of other institutions. Through this test, students are admitted in Integrated L.L.B and L.L.M courses.<br>Students can opt for law courses with any stream (Science stream/ Commerce stream / Arts stream) in 12th.</p>
+<h3>List of Top Universities in India</h3>
+<ul>
+    <li>The West Bengal National University of Juridical Sciences, Kolkata</li>
+    <li>National Law University, Jodhpur, Jodhpur</li>
+    <li>Gujarat National Law University, Gandhinaga</li>
+    <li>Hidayatullah National Law University, Raipur</li>
+    <li>Chanakya National Law University, Patna</li>
+</ul>
+<img src="{% static 'images/lawcollege.jpg'%}" class="image">
+<h1 class="no">Jobs/Career in Law</h1>
+<p>As we know, law is quite respected as a career option. It is a reliable and sincere field. Freshers would have to initially work under a reputed legal firm or lawyer during the start of their career</p>
+<p>If you are a law student, then you can be a public prosecutor, solicitor general or a part of private legal firms after getting some experience. You can also give the exam conducted by the Public Service Commissions and become a Judge</p>
+</body>
+{% endblock %}
+</html>

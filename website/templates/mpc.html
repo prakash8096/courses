@@ -1,0 +1,70 @@
+
+{% extends 'base.html'%}
+{% load static %}
+<html>
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>mpc</title>
+    <style>
+        body{
+        background-color:#cec2c2;
+        background-image:url('/static/images/rev.jpg');
+        margin:100px;
+
+        }
+        p:hover{
+        color:blue;
+        }
+        a:link{
+        color:orange;
+        }
+        a:visited{
+        color:blue;
+        }
+        a:hover{
+        color:green;
+        }
+        p{
+        font-size:25px;
+        }
+        ul{
+        list-style-image:url(/static/images/lists.png);
+        font-size:25px;
+        float:left;
+        }
+        img{
+        width:800px;
+        height:800px;
+        border:1px solid white;
+        border-radius:9px;
+
+        float:right;
+        }
+    </style>
+</head>
+<body>
+<h1>Here is the information for the students whoever wants to go through the M.P.C background</h1>
+<h2>You have many chances</h2><br>
+<h2>1.Going through normal Degree</h2>
+<h2>2.Doing Engineering</h2>
+<h2>3.Or some other courses</h2>
+<p>What after completing 12th? Most Indian students studying in 12th standard have this doubt. While there are numerous professional courses that students may select, they are confused about the career prospects and job opportunities associated with those courses. Lack of proper knowledge is what causes this confusion. Through this article, students from any stream- Science, Commerce or Arts, will be able to find details about good professional courses after 12th. This will help students fight off confusion and thus help them make right and informed choice</p>
+<ul>
+    <a href="{% url 'engg' %}"><li>ENGINEERING</li></a>
+    <a href="{% url 'bsc'%}"><li>B.SC</li></a>
+    <a href="{% url 'navy'%}"><li>NAVY/ARMY</li></a>
+    <a href="{% url 'law'%}"><li>LAW</li></a>
+    <a href="{% url 'arch' %}"><li>ARCHITECTURE</li></a>
+
+</ul>
+<img src="{% static 'images/mpc.jpg'%}" width="400px">
+{% endblock %}
+</body>

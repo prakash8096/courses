@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+{% load static %}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+        border:2px solid black;
+        padding-left:50px;
+        }
+        body{
+        background-image:url(/static/images/an.png);
+        margin:100px;
+        }
+        p{
+        font-size:30px;
+
+        }
+        a{
+        text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+{% for x in object_list %}
+<div>
+
+    <h1>Name:</h1><p><a href="{% url 'details' x.pk %}">{{x.Name}}</a></p>
+
+<h1>Comment:</h1><p>{{x.Comment}}</p>
+</div>
+
+{% endfor %}
+
+</body>
+{% endblock %}
+</html>

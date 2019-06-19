@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html'%}
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+        background-image:url(/static/images/update.jpg);
+        }
+        p{
+        line-height:80px;
+        }
+        .mar{
+        margin-left:500px;
+        margin-top:170px;
+        }
+    </style>
+</head>
+<body>
+<div class="mar">
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" name="submit">
+</form>
+</div>
+</body>
+{% endblock %}
+</html>
